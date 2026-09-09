@@ -3,66 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WhatsPlaying Privacy Policy</title>
+<title>WhatsPlaying</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-  h1 { font-size: 1.6em; }
-  h2 { font-size: 1.2em; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
-  th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left; vertical-align: top; }
-  th { background: #f5f5f5; }
-  code { background: #f0f0f0; padding: 1px 5px; border-radius: 3px; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 640px; margin: 80px auto; padding: 0 20px; line-height: 1.6; color: #222; text-align: center; }
+  h1 { font-size: 1.8em; margin-bottom: 0.2em; }
+  p.tagline { color: #555; margin-top: 0; }
+  a { color: #4a3f8f; }
   footer { margin-top: 3em; font-size: 0.85em; color: #666; }
 </style>
 </head>
 <body>
 
-<h1>WhatsPlaying Privacy Policy</h1>
-<p><em>Last updated: September 9, 2026</em></p>
+<h1>WhatsPlaying</h1>
+<p class="tagline">Turn your phone's music &amp; video into a live WhatsApp About status.</p>
 
-<p>WhatsPlaying ("the app") is developed by an independent developer, not by WhatsApp Inc. or Meta Platforms, Inc. This policy explains what the app does and does not do with your data.</p>
+<p><a href="privacy/">Privacy Policy</a></p>
 
-<h2>What the app accesses, and why</h2>
-
-<p><strong>Media playback information (Notification Listener access).</strong> With your explicit permission (granted via Android's Notification Access setting, which you can revoke at any time), the app reads metadata &mdash; track/video title, artist, and which app is playing it &mdash; from the media session of whichever app is currently playing on your device. This is processed entirely on your device to build a short "now playing" text and is never sent to the app developer or any third party for storage, analytics, or advertising.</p>
-
-<p><strong>Your WhatsApp phone number, during linking only.</strong> When you link the app to your WhatsApp account ("Link with phone number instead"), the phone number you enter is sent directly to WhatsApp's own servers as part of the standard linked-device pairing process &mdash; the same request your phone would make if you performed this pairing by hand. The app developer never receives, stores, or has access to this number.</p>
-
-<p><strong>Your WhatsApp About/status text.</strong> Once linked, the app connects directly to WhatsApp's servers (on-demand, only while updating) to write your About text to reflect what's currently playing, and clears it to "Idle" when playback stops. This connection is between your device and WhatsApp's servers &mdash; the app developer operates no server in this default mode and never sees this data.</p>
-
-<p><strong>Optional: a server URL you configure yourself.</strong> If you turn on the app's optional "Advanced" server-relay mode and enter a Server URL, the same now-playing text is sent to that address instead of, or in addition to, updating WhatsApp directly. This is infrastructure you choose and control &mdash; the app developer does not operate, receive data from, or have access to any such server unless you happen to point it at one you separately share with them.</p>
-
-<p><strong>Google Play In-App Updates.</strong> The app uses Google Play's own In-App Update API to check for and offer new versions. This exchange is between your device and Google Play services, governed by Google's own privacy policy, not the app developer's.</p>
-
-<h2>What the app does NOT do</h2>
-<ul>
-  <li>No account creation, no advertising, no analytics SDKs, no crash-reporting SDKs, no third-party trackers of any kind.</li>
-  <li>No data is sold or shared with third parties for marketing purposes.</li>
-  <li>No data collected by the app is retained on any server operated by the developer, because none exists in the app's default operating mode.</li>
-</ul>
-
-<h2>Permissions used</h2>
-<table>
-<tr><th>Permission</th><th>Purpose</th></tr>
-<tr><td>Notification access (special access)</td><td>Read active media-session metadata to detect what's playing. Revocable anytime in system settings.</td></tr>
-<tr><td>Internet</td><td>Connect directly to WhatsApp's servers (linking/updates) and, if configured, your own relay server.</td></tr>
-<tr><td>Foreground Service / Foreground Service Data Sync</td><td>Keep a playback-triggered status update reliable in the background (survives Doze/App Standby) instead of silently failing with the screen off.</td></tr>
-<tr><td>Post Notifications</td><td>Show the required foreground-service notification while a background update is in progress.</td></tr>
-</table>
-
-<h2>Data retention and deletion</h2>
-<p>Because the app does not operate a server or store your data remotely, there is nothing for the developer to retain or delete on your behalf. Unlinking your WhatsApp account in the app (or revoking Notification Access) stops all data flows immediately. Uninstalling the app removes all locally-stored preferences.</p>
-
-<h2>Children's privacy</h2>
-<p>WhatsPlaying is not directed at children and is not designed to collect personal information from children.</p>
-
-<h2>Changes to this policy</h2>
-<p>If this policy changes, the updated version will be posted at this same URL with a revised "Last updated" date.</p>
-
-<h2>Contact</h2>
-<p>Questions about this policy: <a href="mailto:PLACEHOLDER_SUPPORT_EMAIL">PLACEHOLDER_SUPPORT_EMAIL</a></p>
-
-<footer>WhatsPlaying is an independent app and is not affiliated with, endorsed by, or sponsored by WhatsApp Inc., Meta Platforms, Inc., or any of the media apps it detects. All product names and trademarks belong to their respective owners.</footer>
+<footer>WhatsPlaying is an independent app and is not affiliated with, endorsed by, or sponsored by WhatsApp Inc., Meta Platforms, Inc., or any of the media apps it detects.</footer>
 
 </body>
 </html>
