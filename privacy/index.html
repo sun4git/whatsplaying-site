@@ -18,7 +18,7 @@
 <body>
 
 <h1>WhatsPlaying Privacy Policy</h1>
-<p><em>Last updated: September 9, 2026</em></p>
+<p><em>Last updated: September 20, 2026</em></p>
 
 <p>WhatsPlaying ("the app") is developed by an independent developer, not by WhatsApp Inc. or Meta Platforms, Inc. This policy explains what the app does and does not do with your data.</p>
 
@@ -26,11 +26,15 @@
 
 <p><strong>Media playback information (Notification Listener access).</strong> With your explicit permission (granted via Android's Notification Access setting, which you can revoke at any time), the app reads metadata (track/video title, artist, and which app is playing it) from the media session of whichever app is currently playing on your device. This is processed entirely on your device to build a short "now playing" text and is never sent to the app developer or any third party for storage, analytics, or advertising.</p>
 
+<p><strong>Local listening history and achievements.</strong> The app keeps a history of what you have played (title, source app, and when) in a database stored only on your device, used to show your weekly listening totals, streaks, top track, top artist, top app, and unlockable badges. This history is never sent to the app developer or any third party, and it is not sent to WhatsApp or any server, even when the optional server-relay mode described below is turned on.</p>
+
 <p><strong>Your WhatsApp phone number, during linking only.</strong> When you link the app to your WhatsApp account ("Link with phone number instead"), the phone number you enter is sent directly to WhatsApp's own servers as part of the standard linked-device pairing process: the same request your phone would make if you performed this pairing by hand. The app developer never receives, stores, or has access to this number.</p>
 
 <p><strong>Your WhatsApp About/status text.</strong> Once linked, the app connects directly to WhatsApp's servers (on-demand, only while updating) to write your About text to reflect what's currently playing, and clears it to "Idle" when playback stops. This connection is between your device and WhatsApp's servers. The app developer operates no server in this default mode and never sees this data.</p>
 
 <p><strong>Optional: a server URL you configure yourself.</strong> If you turn on the app's optional "Advanced" server-relay mode and enter a Server URL, the same now-playing text is sent to that address instead of, or in addition to, updating WhatsApp directly. This is infrastructure you choose and control; the app developer does not operate, receive data from, or have access to any such server unless you happen to point it at one you separately share with them.</p>
+
+<p><strong>Sharing your weekly recap, if you choose to.</strong> The app can generate a shareable image summarizing your week (top track, streak, badges) when you tap its share option. This image is only created and shared when you actively choose to do so, using Android's own sharing options, for example sending it via WhatsApp yourself. The app developer never receives a copy of it.</p>
 
 <p><strong>Google Play In-App Updates.</strong> The app uses Google Play's own In-App Update API to check for and offer new versions. This exchange is between your device and Google Play services, governed by Google's own privacy policy, not the app developer's.</p>
 
@@ -51,13 +55,15 @@
 </table>
 
 <h2>Data retention and deletion</h2>
-<p>Because the app does not operate a server or store your data remotely, there is nothing for the developer to retain or delete on your behalf. Unlinking your WhatsApp account in the app (or revoking Notification Access) stops all data flows immediately. Uninstalling the app removes all locally-stored preferences.</p>
+<p>Because the app does not operate a server or store your data remotely, there is nothing for the developer to retain or delete on your behalf. Everything the app stores, including your local listening history, streaks, badges, and preferences, lives only in the app's own storage on your device. Unlinking your WhatsApp account in the app (or revoking Notification Access) stops all data flows immediately. Uninstalling the app removes all of this locally-stored data.</p>
+
+<p><strong>Your device's own backup.</strong> Like most Android apps, WhatsPlaying's locally-stored data, such as your listening history, streaks, badges, and preferences, may be included in your device's own Android backup, a feature controlled by your Google Account settings and governed by Google's own privacy policy, not the app developer's. Your WhatsApp linked-device pairing credential is specifically excluded from this backup for security, so relinking WhatsApp is always required after a fresh install or a new device, rather than an old pairing session silently reappearing.</p>
 
 <h2 id="delete-your-data">How to delete your data</h2>
 <p>WhatsPlaying does not store any of your data on a server the developer operates - there is nothing kept centrally to delete. Everything the app touches lives only on your own device, or passes directly between your device and WhatsApp's servers (see "What the app accesses, and why" above). To remove it:</p>
 <ol>
   <li>Open WhatsPlaying, go to Settings, and tap "Unlink this device" (or revoke Notification Access in your phone's system Settings) to stop all data flows immediately.</li>
-  <li>Uninstall the app to remove every locally-stored preference from your device.</li>
+  <li>Uninstall the app to remove all locally-stored data, including listening history, streaks, badges, and preferences, from your device.</li>
 </ol>
 <p>No separate request is needed - completing either step above deletes everything immediately, since no copy of your data is ever kept anywhere else.</p>
 
